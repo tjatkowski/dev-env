@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  devenv:
+    build: .
+    volumes:
+      - ./workspace:/workspace
+      - ~/.gitconfig:/root/.gitconfig:ro
+      - ~/.ssh:/root/.ssh:ro
+    ports:
+      - "3000:3000"  # Node.js typical port
+      - "4000:4000"  # Ruby typical port
+      - "8000:8000"  # Python typical port
+    tty: true 

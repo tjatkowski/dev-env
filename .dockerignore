@@ -1,0 +1,20 @@
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Common development files/folders
+.git
+.gitignore
+README.md
+
+# Environment files
+.env*
+
+# IDE specific
+.vscode
+
+# Macos specific
+**/.DS_Store
+
+
