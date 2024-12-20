@@ -3,6 +3,7 @@ version: '3.8'
 services:
   devenv:
     build: .
+    env_file: .env
     volumes:
       - ./workspace:/workspace
       - ~/.gitconfig:/root/.gitconfig:ro
